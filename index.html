@@ -1,100 +1,192 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cênio Victor - Arquiteto de Soluções Disruptivas</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            background: #111111;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.05);
+            border: 1px solid #2a2a2a;
         }
+        
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-            margin-top: 0;
+            color: #ffffff;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #8b5cf6;
+            padding-bottom: 15px;
+            display: inline-block;
         }
+        
+        .subtitulo {
+            color: #8b5cf6;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+        }
+        
         h2 {
-            color: #34495e;
-            margin-top: 30px;
+            color: #ffffff;
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #8b5cf6;
+            padding-left: 15px;
         }
-        .contato {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 30px;
-            border-left: 4px solid #667eea;
+        
+        p {
+            color: #b0b0b0;
+            font-size: 1.1em;
+            margin-bottom: 20px;
         }
-        a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            margin: 20px 0;
         }
+        
         ul li {
-            padding: 8px 0;
-            padding-left: 25px;
+            color: #b0b0b0;
+            font-size: 1.1em;
+            padding: 12px 0;
+            padding-left: 35px;
             position: relative;
+            border-bottom: 1px solid #2a2a2a;
         }
+        
+        ul li:last-child {
+            border-bottom: none;
+        }
+        
         ul li:before {
-            content: "🚀";
+            content: "⚡";
             position: absolute;
             left: 0;
+            color: #8b5cf6;
+            font-size: 1.2em;
         }
+        
+        .contato {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border: 1px solid #2a2a2a;
+        }
+        
+        .contato h2 {
+            margin-top: 0;
+            border-left-color: #8b5cf6;
+        }
+        
+        .contato p {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+        
+        .contato a {
+            color: #8b5cf6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+        
+        .contato a:hover {
+            color: #a78bfa;
+            border-bottom-color: #8b5cf6;
+        }
+        
         .redes {
-            margin-top: 20px;
+            margin-top: 25px;
             padding-top: 20px;
-            border-top: 1px solid #dee2e6;
+            border-top: 1px solid #2a2a2a;
         }
+        
         .footer {
             text-align: center;
-            margin-top: 30px;
-            color: #6c757d;
+            margin-top: 50px;
+            color: #6b6b6b;
             font-size: 0.9em;
+        }
+        
+        .destaque {
+            color: #8b5cf6;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .subtitulo {
+                font-size: 1.3em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Cênio Victor</h1>
-        <p style="font-size: 1.2em; color: #667eea;"><strong>Arquiteto de Soluções Disruptivas</strong></p>
+        <div class="subtitulo">Arquiteto de Soluções Disruptivas</div>
         
         <h2>Sobre</h2>
         <p>First-principles thinker. Inovação estrutural para defesa, aeroespacial e sistemas complexos. Identifico erros onde outros veem normalidade e concebo soluções inéditas a partir de problemas reais.</p>
         
         <h2>Áreas de Atuação</h2>
         <ul>
-            <li><strong>Defesa anti-nuclear</strong> – Soluções estratégicas para neutralização de ameaças</li>
-            <li><strong>Sistemas de lançamento alternativos</strong> – Novas abordagens para acesso ao espaço</li>
-            <li><strong>ASATs</strong> – Sistemas antissatélite de nova geração</li>
-            <li><strong>Inteligência Artificial</strong> – Aplicações disruptivas em defesa e automação</li>
-            <li><strong>Sistemas complexos</strong> – Arquitetura de soluções para problemas de alta complexidade</li>
+            <li><span class="destaque">Defesa anti-nuclear</span> – Soluções estratégicas para neutralização de ameaças</li>
+            <li><span class="destaque">Sistemas de lançamento alternativos</span> – Novas abordagens para acesso ao espaço</li>
+            <li><span class="destaque">ASATs</span> – Sistemas antissatélite de nova geração</li>
+            <li><span class="destaque">Inteligência Artificial</span> – Aplicações disruptivas em defesa e automação</li>
+            <li><span class="destaque">Sistemas complexos</span> – Arquitetura de soluções para problemas de alta complexidade</li>
         </ul>
         
         <h2>Método</h2>
-        <p>Meu trabalho é baseado em <strong>first-principles thinking</strong>: quebro problemas até seus fundamentos e reconstruo soluções do zero, sem amarras do pensamento convencional. O resultado são inovações que simplesmente não existiam antes.</p>
+        <p>Meu trabalho é baseado em <span class="destaque">first-principles thinking</span>: quebro problemas até seus fundamentos e reconstruo soluções do zero, sem amarras do pensamento convencional. O resultado são inovações que simplesmente não existiam antes.</p>
         
         <div class="contato">
-            <h2 style="margin-top: 0;">Contato Profissional</h2>
+            <h2>Contato Profissional</h2>
             <p>📧 <strong>E-mail:</strong> <a href="mailto:cenio@proton.me">cenio@proton.me</a></p>
             <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cenio" target="_blank">linkedin.com/in/cenio</a></p>
             <div class="redes">
